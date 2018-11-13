@@ -22,7 +22,6 @@ addons:
                         - libglew-dev
                         - libpng16-dev
                         - qtbase5-dev
-                        - qt5-dev-tools
 
 script:
         - mkdir build
