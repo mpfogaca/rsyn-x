@@ -13,6 +13,15 @@ addons:
                 packages:
                         - g++-5
                         - libboost-all-dev
+                        - flex
+                        - bison
+                        - qtbase5-dev
+                        - libgl1-mesa-dev
+                        - libglu1-mesa-dev
+                        - freeglut3-dev
+                        - libglew-dev
+                        - libpng16-dev
+
 script:
         - mkdir build
         - cd build
