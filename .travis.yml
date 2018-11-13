@@ -14,5 +14,7 @@ addons:
                         - g++-5
                         - libboost-all-dev
 script:
-        - CXX=/usr/bin/g++-5 CC=/usr/bin/gcc-r cmake .
-        - cmake --build . -- -j2
+        - mkdir build
+        - cd build
+        - cmake -DCMAKE_C_COMPILER=/usr/bin/gcc-5 -DCMAKE_CXX_COMPILER=/usr/bin/g++-5 ..
+        - make -j 2
