@@ -28,5 +28,6 @@ script:
         - cd build
         - ls /usr/lib/x86_64-linux-gnu/cmake/Qt5OpenGL
         - sudo find / -type f -name "Qt5OpenGLConfig.cmake"
+        - sudo find / -type d -name "Qt5OpenGL"
         - cmake -DCMAKE_C_COMPILER=/usr/bin/gcc-5 -DCMAKE_CXX_COMPILER=/usr/bin/g++-5 -DCMAKE_PREFIX_PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5OpenGL ..
         - make -j 2
